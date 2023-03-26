@@ -1,0 +1,45 @@
+﻿<Window x:Class="GameStoreDatabase.InStockWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameStoreDatabase"
+        mc:Ignorable="d"
+        Title="InStockWindow" Height="800" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Grid.Column="0">
+            <TextBlock TextWrapping="Wrap" Text="In the following blank, enter the name of the card you want to check the inventory of. In the drop down menu will be the various Magic sets. If you don't specify a set, then the program will return all amounts/sets of the card. If you don't specify a card but do a set, the program will return all cards/inventories from that set."/>
+        </Grid>
+
+        <Grid Grid.Row="0" Grid.Column="1">
+            <WrapPanel Orientation="Vertical">
+                <Label>Card Name</Label>
+                <TextBox  VerticalAlignment="Top" Name ="CardNametxt" Margin="0 0 0 20" Width="150"></TextBox>
+                <Label>List of Sets</Label>
+                <ComboBox IsEditable="True" VerticalAlignment="Center" Name="ListOfSetscb" Margin="0 0 0 20" Width="150"></ComboBox>
+                <Button Content="Submit" Click="OnClick_SubmitQuery" Name="QuerySubmitbtn" VerticalAlignment="Bottom"/>
+            </WrapPanel>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="2" Margin="0 0 0 20">
+            <ListBox Name="ListOfInventorylst"/>
+        </Grid>
+
+        <Grid Grid.Row="3" Grid.Column="2">
+            <Button Content="Close" Click="OnClick_Close"/>
+        </Grid>
+    </Grid>
+</Window>

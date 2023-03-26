@@ -1,0 +1,7 @@
+﻿Future Ideas:
+
+In InStockWindow, whenever they type in a card name, have the combo box automatically show which sets the card is present in.
+	This will require running a MySql command whenever the card name text box loses focus
+	Do the same for updateset, use textchanged property
+In InStockWindow, have a messagebox pop up if the query doesn't return anything(wrong card or set name)
+

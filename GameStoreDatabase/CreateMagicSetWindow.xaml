@@ -1,0 +1,44 @@
+﻿<Window x:Class="GameStoreDatabase.CreateMagicSetWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameStoreDatabase"
+        mc:Ignorable="d"
+        Title="CreateTableWindow" Height="800" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2">
+            <TextBlock Text="This is obviously not going to look like this forever, but put the name of the new set in the smaller text box, then insert each new card into the set. Be sure name the set is exactly how you want it to appear in the future (ie Ikoria would appear as Ikoria: Lair of Behemoths)." 
+                       TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <TextBox Name="SetNametxt" VerticalAlignment="Center" Height="20"/>
+            <TextBlock Text="In the text box below, insert each card in the set on its own line. Do not put two cards on the same line or the program will consider them the same card. For fuse cards, like those found in Ravnica and Amonkhet, format the card name as    Boom // Bust   or    Farm // Market." 
+                       TextWrapping="Wrap" VerticalAlignment="Bottom"/>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <TextBox Name="CardNamestxt" AcceptsReturn="True"/>
+        </Grid>
+
+        <Grid Grid.Row="2" Grid.Column="3">
+            <Button Content="Submit" Click="OnClick_CreateSet" Height="50" Margin="5"/>
+        </Grid>
+        
+        <Grid Grid.Row="3" Grid.Column="3">
+            <Button Content="Close" Click="OnClick_Close"/>
+        </Grid>
+    </Grid>
+</Window>
