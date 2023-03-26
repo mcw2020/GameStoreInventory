@@ -5,3 +5,6 @@ In InStockWindow, whenever they type in a card name, have the combo box automati
 	Do the same for updateset, use textchanged property
 In InStockWindow, have a messagebox pop up if the query doesn't return anything(wrong card or set name)
 
+Known Bugs:
+When the table name is changed, it doesn't update the other combo boxes and crashes the program when trying to select them
+	Changed Test to testing, but didn't update Test in other box

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GameStoreDatabase"
         mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="800"
+        Title="MainWindow" Height="500" Width="500"
         WindowStartupLocation="CenterScreen">
     <Grid>
         <!--Probably going to change how this is organized. This is just an easy way to organize buttons and stuff for now-->
@@ -13,27 +13,24 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <Grid Grid.Column="0" Grid.Row="0">
-            <Button Name="CreateMagicSetWindowOpenbtn" Click="OnClick_OpenCreateMagicSetWindow" Content="MTG Add New Set" Margin="5"/>
+            <Button Name="CreateMagicSetWindowOpenbtn" Click="OnClick_OpenCreateMagicSetWindow" Content="Add New Set" Margin="5"/>
         </Grid>
         <Grid Grid.Column="1" Grid.Row="0">
-            <Button Name="InStockWindowOpenbtn" Click="OnClick_OpenInStockWindow" Content="MTG Look at Stock" Margin="5"/>
+            <Button Name="InStockWindowOpenbtn" Click="OnClick_OpenInStockWindow" Content="Look at Stock" Margin="5"/>
         </Grid>
         <Grid Grid.Column="2" Grid.Row="0">
-            <Button Name="CreateUpdateSetWindowOpenbtn" Click="OnClick_OpenCreateUpdateSetWindow" Content="MTG Update Set/Inventory" Margin="5"/>
+            <Button Name="CreateUpdateSetWindowOpenbtn" Click="OnClick_OpenCreateUpdateSetWindow" Content="Update Set/Inventory" Margin="5"/>
         </Grid>
 
-        <Grid Grid.Row="3" Grid.Column="3">
-            <Button Content="Close" Click="OnClick_Close"/>
+        <Grid Grid.Row="1" Grid.Column="2">
+            <Button Content="Close" Click="OnClick_Close" Height="25" Width="50"/>
         </Grid>
     </Grid>
 </Window>

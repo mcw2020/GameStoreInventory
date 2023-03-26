@@ -25,7 +25,6 @@ C:\Users\mwood\Desktop\Workspace\GameStoreDatabase\GameStoreDatabase\bin\Release
 C:\Users\mwood\Desktop\Workspace\GameStoreDatabase\GameStoreDatabase\bin\Release\System.Memory.xml
 C:\Users\mwood\Desktop\Workspace\GameStoreDatabase\GameStoreDatabase\bin\Release\System.Numerics.Vectors.xml
 C:\Users\mwood\Desktop\Workspace\GameStoreDatabase\GameStoreDatabase\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\mwood\Desktop\Workspace\GameStoreDatabase\GameStoreDatabase\obj\Release\GameStoreDatabase.csprojAssemblyReference.cache
 C:\Users\mwood\Desktop\Workspace\GameStoreDatabase\GameStoreDatabase\obj\Release\CreateMagicSetWindow.g.cs
 C:\Users\mwood\Desktop\Workspace\GameStoreDatabase\GameStoreDatabase\obj\Release\InStockWindow.g.cs
 C:\Users\mwood\Desktop\Workspace\GameStoreDatabase\GameStoreDatabase\obj\Release\MainWindow.g.cs

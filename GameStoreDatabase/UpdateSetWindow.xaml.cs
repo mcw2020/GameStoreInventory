@@ -137,6 +137,8 @@ namespace GameStoreDatabase
                 ListOfSets = backstage.GetAllSets();
                 ListOfSets.Sort();
                 PreSetscmb.ItemsSource = ListOfSets;
+                ChangeCardNameSetNamescmb.ItemsSource = ListOfSets;
+                InsertCardSetNamescmb.ItemsSource = ListOfSets;
             }
 
         }
